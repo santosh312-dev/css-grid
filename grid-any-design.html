@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex More Less Area</title>
+</head>
+<body>
+    <div class="cards">
+
+        <div class="card1">
+            <h2>This is text in card</h2>
+        </div>
+        <div class="card2">
+            <h2>This is text in card</h2>
+        </div>
+        <div class="card3">
+            <h2>This is text in card</h2>
+        </div>
+        <div class="card4">
+            <h2>This is text in card</h2>
+        </div>
+        <div class="card5">
+            <h2>This is text in card</h2>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2 box2"
+        "box1 box3 box4"
+        "box5 box5 box4";
+        width: 600px;
+    }
+    .card1{
+        grid-area: box1;
+        background-color: rgb(21, 113, 194);
+    }
+    .card2{
+        grid-area: box2;
+        background-color: rgb(53, 14, 194);
+    }
+    .card3{
+        grid-area: box3;
+        background-color: aqua;
+    }
+    .card4{
+        grid-area: box4;
+        background-color: rgb(236, 11, 11);
+    }
+    .card5{
+        grid-area: box5;
+        background-color: rgb(216, 25, 89);
+    }
+
+</style>
