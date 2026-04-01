@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Size in HTML</title>
+</head>
+<body>
+    <h3>Grid will keep size same for all the cards: even text/content is large </h3>
+    <div class="cards">
+        <div class="card">
+            Hello
+        </div>
+        <div class="card">
+            Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Non amet cumque tempora. Vero, explicabo similique.
+        </div>
+        <div class="card">
+            Hello
+        </div>
+        <div class="card">
+            Hello
+        </div>
+        <div class="card">
+            Hello
+        </div>
+        <div class="card">
+            Hello Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, ad.
+        </div>
+        <div class="card">
+            Hello
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        gap: 10px;
+    }
+    .card{
+        background-color: aquamarine;
+        height: 150px;
+        text-align: center;
+    }
+</style>
