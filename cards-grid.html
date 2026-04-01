@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards using Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <h3>Card1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ab minima esse obcaecati laboriosam ullam tempore veritatis non voluptates soluta temporibus quia harum fugiat, reprehenderit consectetur hic provident voluptas! Dolorem.</p>
+                <button>button1</button>
+            </div>
+            <div class="card">
+                <h3>Card2</h3>
+                <p> veritatis non voluptates soluta temporibus quia harum fugiat, reprehenderit consectetur hic provident voluptas! Dolorem.</p>
+                <button>button1</button>
+            </div>
+            <div class="card">
+                <h3>Card3</h3>
+                <p>caecati laboriosam ullam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio itaque odit, cum esse ducimus porro. tempore veritatis non voluptates soluta temporibus quia harum fugiat, reprehenderit consectetur hic provident voluptas! Dolorem.</p>
+                <button>button1</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 12px;
+    }
+    .card{
+        border: 1px solid red;
+        padding: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+
+</style>
